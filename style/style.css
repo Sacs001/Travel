@@ -410,8 +410,6 @@ header {
 
 .popup_body {
     width: 45.14%;
-    /* min-height: 100%; */
-    /* display: flex; */
 
     height: 660px;
     background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
@@ -422,7 +420,6 @@ header {
 .popup_content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
