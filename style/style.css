@@ -1,7 +1,14 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     max-width: 1440px;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 20px;
+
+    scroll-behavior: smooth;
 }
 
 
@@ -81,6 +88,11 @@ header {
     margin-left: 42px;
 }
 
+.nav_item a:hover {
+    color: rgb(77, 137, 182);
+    transition-duration: 500ms;
+}
+
 .nav_item a {
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -102,7 +114,10 @@ header {
     color: #FFFFFF;
 }
 
-
+.btn_login:hover {
+    background-color: rgb(77, 137, 182);
+    transition-duration: 500ms;
+}
 
 
 /* Header Title */
@@ -161,6 +176,7 @@ header {
     color: #F2785C;
 }
 
+
 .btn_in_inp {
 
     width: 35.6%;
@@ -175,7 +191,10 @@ header {
     color: #FFFFFF;
 }
 
-
+.btn_in_inp:hover {
+    background-color: rgb(77, 137, 182);
+    transition-duration: 500ms;
+}
 
 /* 3_steps_section */
 
@@ -281,6 +300,11 @@ header {
     color: #FFFFFF;
 }
 
+.find_more_btn:hover {
+    background-color: rgb(77, 137, 182);
+    transition-duration: 500ms;
+}
+
 .arrow {
     margin-right: 12.5px;
 }
@@ -355,6 +379,35 @@ header {
 .ts_link {
     font-weight: 600;
     color: #0D606F;
+}
+
+.travel_stories_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border: none;
+}
+
+.see_more_btn {
+    width: 15.8%;
+    height: 59px;
+    margin: 10px auto;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+}
+
+.see_more_btn:hover {
+    background-color: rgb(77, 137, 182);
+    transition-duration: 500ms;
 }
 
 
