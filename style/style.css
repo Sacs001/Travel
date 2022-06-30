@@ -276,6 +276,35 @@ header {
     margin-left: 60px;
 }
 
+.popular_destination_pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+
+
+.slide_swicher {
+    background-color: #f2775c;
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+.active {
+    background-color: #d0160c;
+}
+
+.slide_swicher:hover {
+    background-color: #48d0d9;
+    transition-duration: 600ms;
+}
+
 .popular_destination_btn {
     display: flex;
     justify-content: center;
