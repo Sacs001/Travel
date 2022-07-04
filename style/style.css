@@ -19,7 +19,7 @@ header {
     position: relative;
 }
 
-.header_bg {
+.preview {
     background: url(/img/garrett-parker-bg-header.svg);
     height: 765px;
     width: 100%;
