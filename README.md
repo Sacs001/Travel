@@ -1,1 +1,1 @@
-# rsschool-cv
+# index.html
