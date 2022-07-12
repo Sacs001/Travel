@@ -165,7 +165,7 @@
     ._3steps_section {
         width: 92%;
         margin: 20px auto 0px auto;
-
+        height: 173px;
     }
 
 
@@ -210,25 +210,79 @@
         margin-bottom: 20px;
     }
 
-    .slider {
-        display: none;
-    }
+    .popular_destination_slider {
 
-    .slider_adaptive {
-
-        height: 210px;
-        width: 92%;
-        border-radius: 15px;
-        display: block;
-        margin: 20px auto 10px auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .destination {
+        width: 92%;
+        height: 210px;
+        border-radius: 16px;
+        margin-left: 0px;
+        background-position: center;
         visibility: hidden;
-        margin: 0px;
+        position: relative;
+
+    }
+
+    .img_slide_1 {
+        background: url(/img/Popular_destination_1.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 15px;
+    }
+
+    .img_slide_2 {
+        background: url(/img/Popular_destination_2.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 15px;
+    }
+
+    .img_slide_3 {
+        background: url(/img/Popular_destination_3.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 15px;
     }
 
     .active {
         visibility: visible;
     }
+
+    .popular_destination_pagination {
+        margin-top: 170px;
+    }
+
+    .slide_swicher {
+        height: 8px;
+        width: 8px;
+    }
+
+    .find_more_btn {
+        width: 25.6%;
+        height: 30px;
+        font-size: 11px;
+        line-height: 15px;
+
+    }
+
+    .arrow {
+        height: 12px;
+        width: 12px;
+        margin-right: 6px;
+        margin-top: 3px;
+    }
+
+    /* Travel Stories */
+
+    .travel_stories_title {
+        font-size: 14px;
+        line-height: 18.5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
 }
