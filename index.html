@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style_mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +19,30 @@
     <title>Document</title>
     </head>
     <header>
-        <section class="preview">
+        <section class="preview ">
+            <div class="header_menu_adaptive">
+                <nav class="nav_adaptive">
+                    <li class="nav_item_adaptive"><a href=""><img src="/img/Vector_logo.svg" alt=""></a></li>
+                    <li class="nav_item_adaptive">
+                        <div class="burger-menu_adaptive">
+                            <input id="menu-toggle" type="checkbox" />
+                            <label class="menu-btn" for="menu-toggle">
+                                <span></span>
+                            </label>
+
+                            <ul class="menubox_adaptive">
+                                <li><a class="menu-item_adaptive" href="#">How It Works</a></li>
+                                <li><a class="menu-item_adaptive" href="#">Plan Your Trip</a></li>
+                                <li><a class="menu-item_adaptive" href="#">Destinations</a></li>
+                                <li><a class="menu-item_adaptive" href="#">Travel Stories</a></li>
+                                <li><a class="menu-item_adaptive" href="#">Account</a></li>
+                                <li><a class="menu-item_adaptive" href="#">Social Media</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </nav>
+
+            </div>
             <div class="header_menu">
                 <div class="header_panel">
                     <div class="header_logo"><img src="/img/Vector_logo.svg" alt="">Travel Portal</div>
@@ -53,32 +77,45 @@
     <main>
         <section class="_3steps_section">
             <div class="_3steps_text" id="steps">3 STEPS TO THE PERFECT TRIP</div>
-            <div class="_3steps_frame">
-                <div class="frame"><img src="/img/bicycle_img.svg" class="image_frame" alt="">
-                    <div class="text">Tell us what you want to do</div>
-                </div>
-                <div class="frame"><img src="/img/Calendar_img.svg" class="image_frame" alt="">
-                    <div class="text">Share us preferable dates</div>
-                </div>
-                <div class="frame"><img src="/img/Fly_img.svg" class="image_frame" alt="">
-                    <div class="text">We will give you recommendations</div>
+            <div class="frame">
+                <div class="_3steps_frame">
+                    <div class="frame"><img src="/img/bicycle_img.svg" class="image_frame" alt="">
+                        <div class="text">Tell us what you want to do</div>
+                    </div>
+                    <div class="frame"><img src="/img/Calendar_img.svg" class="image_frame" alt="">
+                        <div class="text">Share us preferable dates</div>
+                    </div>
+                    <div class="frame"><img src="/img/Fly_img.svg" class="image_frame" alt="">
+                        <div class="text">We will give you recommendations</div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="popular_destination_section">
             <div class="popular_destination_text" id="destination">POPULAR DESTINATIONS</div>
-            <div class="popular_destination_slider">
-                <div class="destination"><img src="/img/Rectangle 1.svg" alt=""></div>
-                <div class="destination"><img src="/img/Rectangle 2.svg" alt=""></div>
-                <div class="destination"><img src="/img/Rectangle 3.svg" alt=""></div>
-            </div>
 
-            <div class="popular_destination_pagination">
-                <label for="" class="slide_swicher swicher_1"></label>
-                <label for="" class="slide_swicher active swicher_2"></label>
-                <label for="" class="slide_swicher swicher_3"></label>
-            </div>
+            <section class="slider">
+                <div class="popular_destination_slider">
+                    <div class="destination"><img src="/img/Rectangle 1.svg" alt=""></div>
+                    <div class="destination"><img src="/img/Rectangle 2.svg" alt=""></div>
+                    <div class="destination"><img src="/img/Rectangle 3.svg" alt=""></div>
+                </div>
+
+                <div class="popular_destination_pagination">
+                    <label for="" class="slide_swicher swicher_1"></label>
+                    <label for="" class="slide_swicher active swicher_2"></label>
+                    <label for="" class="slide_swicher swicher_3"></label>
+                </div>
+
+            </section>
+            <section class="slider_adaptive">
+                <div class="popular_destination_slider_adaptive">
+                    <div class="destination active"><img src="/img/Popular_destination_1.svg" alt=""></div>
+                    <div class="destination"><img src="/img/Popular_destination_2.svg" alt=""></div>
+                    <div class="destination"><img src="/img/Popular_destination_3.svg" alt=""></div>
+                </div>
+            </section>
             <div class="popular_destination_btn">
                 <button class="find_more_btn"><img src="/img/arrow.svg" alt="" class="arrow">Find More</button>
             </div>
@@ -173,7 +210,6 @@
             <a href="https://github.com/Sacs001" class="icon_social_media"><img src="/img/icon_youtube.svg" alt=""></a>
             <a href="https://github.com/Sacs001" class="icon_social_media"><img src="/img/icon_twitter.svg" alt=""></a>
         </div>
-
         </div>
     </footer>
 
@@ -203,6 +239,12 @@
             </div>
         </div> -->
 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slider -->
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
