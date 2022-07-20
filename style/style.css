@@ -7,8 +7,6 @@ body {
     max-width: 1440px;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 20px;
-
-    scroll-behavior: smooth;
 }
 
 
@@ -273,15 +271,20 @@ header {
 
 .popular_destination_slider {
     display: flex;
-    flex-direction: row;
+    margin-left: 22.2%;
+    margin-right: 22.2%;
+    overflow: hidden;
+
 }
 
 .destination {
-    margin-left: 60px;
+
     width: 800px;
     height: 800px;
     border-radius: 16px;
-    background-position: center;
+    /* background-position: center; */
+    flex: 0 0 auto;
+    transition: all ease 1s;
 }
 
 .destination:first-child {
@@ -290,17 +293,14 @@ header {
 
 .img_slide_1 {
     background: url(/img/Rectangle\ 1.svg) no-repeat;
-    background-size: cover;
 }
 
 .img_slide_2 {
     background: url(/img/Rectangle\ 2.svg) no-repeat;
-    background-size: cover;
 }
 
 .img_slide_3 {
     background: url(/img/Rectangle\ 3.svg) no-repeat;
-    background-size: cover;
 }
 
 .popular_destination_pagination {
