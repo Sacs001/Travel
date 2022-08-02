@@ -519,9 +519,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* 
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; */
 }
 
 .popup_body {
@@ -539,6 +539,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 .title_popup {
@@ -559,6 +561,9 @@ header {
     width: 84.8%;
     height: 56px;
     border-radius: 10px;
+
+    border: 0;
+    padding: 0;
 }
 
 .sign_in_facebook {
@@ -575,11 +580,14 @@ header {
     line-height: 26px;
 
     color: #FFFFFF;
+
+    border: 0;
+    padding: 0;
 }
 
 .sign_in_google {
 
-    margin-bottom: 42px;
+    margin-bottom: 31px;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 400;
@@ -589,6 +597,9 @@ header {
     color: #0D606F;
     background: #FFFFFF;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+
+    border: 0;
+    padding: 0;
 }
 
 .popup_logo {
@@ -638,6 +649,69 @@ header {
 }
 
 
+
+.email_text_and_password {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: rgba(13, 96, 111, 0.5);
+    margin: 4vh auto 1vh 3.3vw;
+}
+
+.sing_in {
+    background-color: #0D606F;
+    color: #FFFFFF;
+    margin-top: 5vh;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+}
+
+.forgot_your_pass {
+    color: #0D606F;
+    text-decoration: none;
+    /* text-decoration: underline 2px;
+    text-underline-offset: 1px; */
+}
+
+/* .forgot_your_pass::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: inline-block;
+    width: 290px;
+    min-width: 290px;
+    height: 5px;
+    z-index: 1;
+    background-color: #0D606F;
+} */
+
+.forgot_your_pass::after {
+    content: '';
+    position: absolute;
+    top: 646px;
+    left: 683px;
+    display: inline-block;
+    width: 150px;
+    min-width: 150px;
+    height: 2px;
+    z-index: 1;
+    background-color: #0D606F;
+}
+
+.line {
+    border: none;
+    border-color: red;
+    color: red;
+    height: 2px;
+}
+
+.dont_have-account {}
 
 /* font-family: 'Red Hat Text';
 font-style: normal;
