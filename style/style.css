@@ -519,9 +519,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 
+
     opacity: 0;
-    visibility: hidden; */
+    visibility: hidden;
 }
 
 .popup_body {
@@ -536,7 +536,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
 }
 
@@ -697,28 +696,51 @@ header {
     text-underline-offset: 1px;
 }
 
-/* font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 53px; 
-
-color: #F2785C;*/
 
 
+/* Popup_sing_up */
+
+.popup_sing_up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
 
 
+.popup_sing_up_body {
+    width: 45.14%;
+    height: 62vh;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
 
-/* identical to box height */
+.popup_sing_up_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 
-/* font-family: 'Aleo',
-serif;
+.title_popup_sing_up {
+    margin-top: 25px;
+    border: none;
 
-font-family: 'Magra',
-sans-serif;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
 
-font-family: 'Red Hat Text',
-sans-serif; */
-
-/* MOBILE VERSION */
+    color: #0D606F;
+}
