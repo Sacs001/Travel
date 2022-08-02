@@ -526,13 +526,10 @@ header {
 
 .popup_body {
     width: 45.14%;
-
-    height: 660px;
+    height: 93vh;
     background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
-
-
 }
 
 .popup_content {
@@ -587,7 +584,7 @@ header {
 
 .sign_in_google {
 
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 400;
@@ -607,45 +604,43 @@ header {
     margin-right: 16px;
 }
 
+
+.or_line_popup {
+    width: 84%;
+}
+
 .or_popup {
-    overflow: hidden;
+    position: relative;
     text-align: center;
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-
+    width: 100%;
     color: rgba(13, 96, 111, 0.5);
-}
-
-.or_popup span {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .or_popup:before,
 .or_popup:after {
-
     content: " ";
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
+    display: block;
+    position: absolute;
+    width: 46.5%;
     height: 1px;
     background-color: rgba(13, 96, 111, 0.5);
-    position: relative;
 }
 
 .or_popup:before {
 
-    margin-left: -100%;
-    left: -9px;
+    top: 50%;
+    left: 0;
 }
 
 .or_popup:after {
 
-    margin-right: -100%;
-    right: -9px;
+    top: 50%;
+    right: 0;
 }
 
 
@@ -672,46 +667,35 @@ header {
 }
 
 .forgot_your_pass {
+    margin-top: 10px;
     color: #0D606F;
-    text-decoration: none;
-    /* text-decoration: underline 2px;
-    text-underline-offset: 1px; */
-}
-
-/* .forgot_your_pass::before {
-    content: '';
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    display: inline-block;
-    width: 290px;
-    min-width: 290px;
-    height: 5px;
-    z-index: 1;
-    background-color: #0D606F;
-} */
-
-.forgot_your_pass::after {
-    content: '';
-    position: absolute;
-    top: 646px;
-    left: 683px;
-    display: inline-block;
-    width: 150px;
-    min-width: 150px;
-    height: 2px;
-    z-index: 1;
-    background-color: #0D606F;
+    text-decoration: underline 2px;
+    text-underline-offset: 1px;
 }
 
 .line {
-    border: none;
-    border-color: red;
-    color: red;
-    height: 2px;
+    width: 84.8%;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    margin-top: 26px;
+    margin-bottom: 20px;
 }
 
-.dont_have-account {}
+.dont_have-account {
+    color: rgba(13, 96, 111, 0.5);
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.register {
+    text-decoration: none;
+    color: #0D606F;
+    text-decoration: underline 2px;
+    text-underline-offset: 1px;
+}
 
 /* font-family: 'Red Hat Text';
 font-style: normal;
