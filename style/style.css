@@ -4,6 +4,7 @@ html {
 }
 
 body {
+
     max-width: 1440px;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 20px;
@@ -18,6 +19,7 @@ header {
 }
 
 .preview {
+
     background: url(/img/garrett-parker-bg-header.svg);
     height: 765px;
     width: 100%;
@@ -31,6 +33,7 @@ header {
 }
 
 .header_menu {
+
     width: 100%;
     height: 90px;
     background: rgba(242, 120, 92, 0.7);
@@ -147,6 +150,9 @@ header {
     line-height: 24px;
     padding-top: 50px;
     padding-bottom: 46px;
+    font-family: 'Aleo';
+    color: #FFFFFF;
+
 }
 
 
@@ -271,19 +277,22 @@ header {
 
 .popular_destination_slider {
     display: flex;
+    position: relative;
     margin-left: 22.2%;
     margin-right: 22.2%;
-    overflow: hidden;
+    width: 800px;
+    height: 800px;
 
 }
 
 .destination {
-
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 800px;
     height: 800px;
     border-radius: 16px;
-    /* background-position: center; */
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     transition: all ease 1s;
 }
 
@@ -301,6 +310,15 @@ header {
 
 .img_slide_3 {
     background: url(/img/Rectangle\ 3.svg) no-repeat;
+}
+
+.slide_active {
+    z-index: 3;
+    transform: 0.5s;
+}
+
+.arrow_slider {
+    display: none;
 }
 
 .popular_destination_pagination {
@@ -323,7 +341,7 @@ header {
     margin-bottom: 40px;
 }
 
-.active {
+.act {
     background-color: #d0160c;
 }
 
@@ -350,7 +368,7 @@ header {
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-
+    border: none;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
@@ -414,8 +432,26 @@ header {
 }
 
 .ts_img {
+    width: 152vw;
+    height: 33vh;
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
+}
+
+.ts_img_1 {
+    background: url('/img/TS_1.svg')no-repeat;
+}
+
+.ts_img_2 {
+    background: url('/img/TS_2.svg')no-repeat;
+}
+
+.ts_img_3 {
+    background: url('/img/TS_3.svg')no-repeat;
+}
+
+.ts_img_4 {
+    background: url('/img/TS_4.svg')no-repeat;
 }
 
 .ts_text {
@@ -455,7 +491,7 @@ header {
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-
+    border: none;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
