@@ -101,9 +101,22 @@ document.addEventListener('click', (event) => {
     console.log(event.target.classList.value)
 });
 
+
+// close with Esc
+
 document.addEventListener('keydown', (event) => {
-    if (event.keydown == 27) {
-        styleChange(popupLogin)
-        console.log(event.keydown)
+    let loginPopupExamination = popupLogin.classList.contains('popup_close');
+    let singUpPopupExamination = popupSingUp.classList.contains('popup_close');
+
+    if (event.which == 27 && loginPopupExamination !== true && singUpPopupExamination == true) {
+        setTimeout(() => {
+            popupLogin.classList.toggle('popup_close')
+        }, 300)
+    } else if (event.which == 27 && singUpPopupExamination !== true) {
+        setTimeout(() => {
+            popupSingUp.classList.toggle('popup_close')
+        }, 300)
     }
+    console.log(event.which)
+    popupLogin.classList.contains('popup_close')
 });
