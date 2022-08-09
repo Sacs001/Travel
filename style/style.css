@@ -314,7 +314,7 @@ header {
 
 .slide_active {
     z-index: 3;
-    transform: 0.5s;
+    transform: 200ms;
 }
 
 .arrow_slider {
@@ -405,7 +405,7 @@ header {
 
 .travel_stories_content_bg {
     background: url(/img/travel_stories_bg.svg);
-    height: 1331px;
+    height: 180vh;
 }
 
 .travel_stories_content_white_ground {
@@ -414,7 +414,7 @@ header {
 }
 
 .travel_stories_section {
-    padding: 40px 8.7% 140px 8.3%;
+    padding: 40px 8.7% 0px 8.3%;
 }
 
 .travel_stories {
@@ -509,10 +509,15 @@ header {
 
 /* Footer */
 .footer {
+
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-top: -50px;
+    margin-top: -3vh;
+
+    position: relative;
+    bottom: 16vh;
+    left: 6vw;
 }
 
 .footer_organization {
@@ -556,8 +561,6 @@ header {
     justify-content: center;
     align-items: center;
 
-    opacity: 0;
-    visibility: hidden;
 }
 
 .popup_body {
@@ -748,6 +751,11 @@ header {
     justify-content: center;
     align-items: center;
 
+
+
+}
+
+.popup_close {
     opacity: 0;
     visibility: hidden;
 }
@@ -779,4 +787,11 @@ header {
     line-height: 38px;
 
     color: #0D606F;
+}
+
+.register_log_in {
+    text-decoration: none;
+    color: #0D606F;
+    text-decoration: underline 2px;
+    text-underline-offset: 1px;
 }

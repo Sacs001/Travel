@@ -270,6 +270,7 @@
         right: 0vw;
         margin-left: 22px;
         margin-right: 22px;
+
     }
 
     .arrow_left_slider {
@@ -282,6 +283,7 @@
         height: 10px;
         width: 10px;
         color: rgba(242, 120, 92, 0.5);
+        cursor: pointer;
     }
 
     .arrow_right_slider {
@@ -295,6 +297,7 @@
         height: 10px;
         width: 10px;
         color: rgba(242, 120, 92, 0.5);
+        cursor: pointer;
     }
 
     .arrow_left_slider:hover,
@@ -308,7 +311,6 @@
     } */
 
     .popular_destination_pagination {
-        /* margin-top: 170px; */
         position: absolute;
         top: 66%;
         right: 46%;
@@ -421,10 +423,8 @@
     }
 
     .see_more_btn {
-        width: 15.8%;
-        height: 59px;
-        /* margin: 10px auto; */
-        border-radius: 10px;
+        width: 28%;
+        height: 3.9vh;
         font-size: 11px;
         line-height: 15px;
 
